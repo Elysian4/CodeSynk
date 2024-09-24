@@ -84,7 +84,12 @@ function createSiteEntry(name, value) {
 
     li.appendChild(removeBtn);
     li.appendChild(siteName);
-    li.appendChild(document.createTextNode(' :   '));
+
+    const colonSpan = document.createElement('span');
+    colonSpan.textContent = ' : ';
+    colonSpan.style.margin = '0 40px'; 
+    li.appendChild(colonSpan);
+    
     li.appendChild(siteValue);
     li.appendChild(decrementBtn);
     li.appendChild(incrementBtn);

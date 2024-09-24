@@ -3,7 +3,7 @@
   "version": "0.1",
   "manifest_version": 3,
   "description": "Manage and keep track of coding questions across platforms",
-  "permissions": ["storage", "tabs", "activeTab"],
+  "permissions": [],
   "content_scripts": [
     {
       "matches": ["<all_urls>"],

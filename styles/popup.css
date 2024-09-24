@@ -11,18 +11,22 @@ body {
   text-align: center;
   justify-content: center;
 }
+
 .titlebox {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-bottom: 30px !important;
 }
+
 .title {
   margin-left: 15px;
 }
 
 #inputfields {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 input {
@@ -51,7 +55,6 @@ input {
   color: white;
   border: none;
   cursor: pointer;
-  border: none;
   box-shadow: 0 0.5px 1px rgba(0, 0, 0, 0.4);
   border-radius: 2px !important;
 }
@@ -95,10 +98,37 @@ li {
 }
 
 li button {
-  margin-left: 10px;
   background: none;
   border: none;
   cursor: pointer;
+}
+
+li .button-group {
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px; 
+}
+
+li .site-name {
+  flex: 1;
+}
+
+li .site-value {
+  margin-right: 35px;
+  flex: 0;
+}
+
+li .increment-btn,
+li .decrement-btn {
+  background-color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button img {
+  display: block;
+  width: 25px;
+  height: auto;
 }
 
 .total-container {
